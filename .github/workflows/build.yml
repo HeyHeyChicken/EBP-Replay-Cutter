@@ -74,7 +74,7 @@ jobs:
         run: npm install
       # Build Angular project
       - name: Build Angular app
-        run: npm run build
+        run: npx ng build
       - name: Move Angular build to static folder
         run: |
           Remove-Item -Recurse -Force src\static\*
